@@ -1,17 +1,19 @@
+import './index.css'
+import Hero from './components/Hero'
 import Nav from './components/Nav'
 
 function App() {
   
   return (
-    <>
-    <div className=''>
+    
+    <main className='relative'>
       <Nav/>
       <section className=''>
-        hero
+        <Hero/>
       </section>
-    </div>
+    </main>
       
-    </>
+    
   )
 }
 
