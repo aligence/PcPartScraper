@@ -8,7 +8,7 @@ const Nav = () => {
         <a href='/'>
           <img src={pc} className='pc' alt="logo" width={150} />
         </a>
-        <ul className='flex justify-content items-center gap-32 max-lg:hidden'>
+        <ul className='flex justify-content items-center gap-24 max-lg:hidden'>
           {navLinks.map((item) => (
             <li key={item.label}>
               <a href={item.href} className='font-montserrat leading-normal text-xl text-slate-grey'>
@@ -17,7 +17,7 @@ const Nav = () => {
             </li>
           ))}
         </ul>
-        <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden'>
+        <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden px-2'>
           <a href='/'>Sign in</a>
           <span>/</span>
           <a href='/'>Explore now</a>

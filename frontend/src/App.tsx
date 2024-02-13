@@ -1,6 +1,7 @@
 import './index.css'
 import Hero from './components/Hero'
 import Nav from './components/Nav'
+import HeroCarousel from './components/HeroCarousel'
 
 function App() {
   
@@ -8,9 +9,11 @@ function App() {
     
     <main className='relative'>
       <Nav/>
-      <section className=''>
+      <section className='h-screen'>
         <Hero/>
+        <HeroCarousel/>
       </section>
+      
     </main>
       
     

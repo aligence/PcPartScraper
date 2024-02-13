@@ -1,10 +1,12 @@
 import { FcSearch } from "react-icons/fc"
 const Searchbar = () => {
+  const handleSubmit = () =>{}
   return (
-    <div className='w-full pt-8 flex'>
-        <FcSearch/>
-        <input placeholder='Paste Link Here' className="w-full border-2 shadow-lg text-2xl"/>
-    </div>
+        <form className="flex flex-row gap-4 mt-12 w-full"onSubmit={handleSubmit}>
+          <FcSearch size={40} className="-mx-4"/>
+          <input placeholder='Paste Link Here' className="w-full border-2 shadow-lg text-xl rounded-md searchbar-input"/>
+          <button type ="submit" className="searchbar-btn bg-black text-white w-24 rounded-sm -mx-5">Search</button>
+        </form>
   )
 }
 
